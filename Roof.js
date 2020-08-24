@@ -23,7 +23,7 @@ class Roof
 			translate(groundPos.x, groundPos.y);
 			rectMode(CENTER)
 		
-			fill(255,255,255)
+			
 			rect(0,0,this.w, this.h);
 			pop()
 			

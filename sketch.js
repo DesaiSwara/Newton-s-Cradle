@@ -26,7 +26,7 @@ function setup() {
 	ballObject5= new Balls (360,350,40,40);
 
     roof= new Roof (280,150,200,20)
-	
+	rope1= new Chain (ballObject1.body,roof.body,ballDiameter*2,0);
 	
     Engine.run(engine);
   
@@ -35,7 +35,7 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background(0);
+  background(255);
   ballObject1.display();
   ballObject2.display();
   ballObject3.display();
@@ -43,7 +43,7 @@ function draw() {
   ballObject5.display();
   
   roof.display();
-
+  rope1.display();
   
 
   drawSprites();
