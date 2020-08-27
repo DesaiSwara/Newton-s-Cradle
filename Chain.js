@@ -3,13 +3,13 @@ class Chain {
     this.offsetX=offsetX;
     this.offsetY=offsetY;
 
-      var option={
+      var options={
         bodyA:body1,
         bodyB:body2,
         pointB:{x:this.offsetX,y:this.offsetY}
     }
 
-    this.rope=Constraint.create(options);
+      this.rope=Matter.Constraint.create(options);
       World.add(world,this.rope);
   }
 
@@ -26,6 +26,5 @@ class Chain {
       var Anchor2Y=pointB.y+this.offsetY;
 
       line (Anchor1X,Anchor1Y,Anchor2X,Anchor2Y);
+    }
   }
-
-}
